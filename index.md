@@ -1,4 +1,4 @@
 ---
 ---
 
-Recipes
+[Sushi Rice](Utility/SushiRice.html)  
