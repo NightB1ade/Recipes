@@ -1,11 +1,12 @@
 ---
 title: Sushi Rice
+basePortions: 2
 ---
 
 # Ingredients
 
-- 2 cups rice
-- 2.5 cups water
-- 2 tbs rice vinegar
-- 1 tbs sugar
-- 1 tsp salt
+- <span class="scale" num="2"></span> cups rice
+- <span class="scale" num="2.5"></span> cups water
+- <span class="scale" num="2"></span> tbs rice vinegar
+- <span class="scale" num="1"></span> tbs sugar
+- <span class="scale" num="1"></span> tsp salt

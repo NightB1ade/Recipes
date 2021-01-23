@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+
+{% include header.html %}
+
+<body>
+{% include page_title.html %}
+
+<section id="content">
+<div>
+	<h2>Portions</h2>
+	<p>Serves <input id="PortionSpinner" class="spinner" value="{{ page.basePortions }}"></p>
+</div>
+
+{{ content }}
+</section>
+
+<script>
+function PortionScaleUpdate() {
+	$("section#content span.scale").html(function(){
+		return ($(this).attr("num") / {{ page.basePortions }} * $("#PortionSpinner").spinner("value"));
+	});
+}
+
+$(document).ready(function() {
+	$(".spinner").spinner({
+		min: 1
+	});
+
+	// Bind onChange
+	$("#PortionSpinner").on("spinstop", PortionScaleUpdate);
+
+	PortionScaleUpdate();
+});
+
+
+</script>
+
+</body>
+
+</html>

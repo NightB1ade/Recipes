@@ -1,5 +1,6 @@
 ---
 title: Coconut Chicken Noodle Soup
+basePortions: 2
 ---
 
 ## Preparation Time
@@ -10,17 +11,13 @@ Less than 15 minutes
 
 10 to 30 minutes
 
-## Portions
-
-Serves 2
-
 # Ingredients
 
-- 2 nests medium egg noodles
-- 6 spring onions, chopped
-- 400ml/14fl oz low-fat coconut milk
-- 400ml/14fl oz chicken stock made with 1× stock cube
-- 2-4 chicken thighs or drumsticks, skin removed
+- <span class="scale" num="2"></span> nests medium egg noodles
+- <span class="scale" num="6"></span> spring onions, chopped
+- <span class="scale" num="400"></span>ml/<span class="scale" num="14"></span>fl oz low-fat coconut milk
+- <span class="scale" num="400"></span>ml/<span class="scale" num="14"></span>fl oz chicken stock made with <span class="scale" num="1"></span>× stock cube
+- <span class="scale" num="2"></span>-<span class="scale" num="4"></span> chicken thighs or drumsticks, skin removed
 - Salt and freshly ground black pepper
 
 # Method
