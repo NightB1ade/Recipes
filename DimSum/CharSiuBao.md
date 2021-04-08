@@ -15,8 +15,8 @@ basePortions: 10
 - <span class="scale" num="120"></span>g corn flour
 - <span class="scale" num="65"></span>g sugar
 - <span class="scale" num="60"></span>ml vegetable oil
-- <span class="scale" num="2.5"></span> teaspoons (<span class="scale" num="10"></span>g) baking powder
-- <span class="scale" num="1"></span>-<span class="scale" num="2"></span> teaspoons water (optional)
+- <span class="scale" num="2.5"></span> tsp (<span class="scale" num="10"></span>g) baking powder
+- <span class="scale" num="1"></span>-<span class="scale" num="2"></span> tsp water (optional)
 - <span class="scale" num="300"></span>g char siu, finely chopped
 
 # Method
