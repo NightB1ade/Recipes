@@ -4,6 +4,11 @@ titles_from_headings:
 defaults:
     -
         scope:
+            path: Desserts
+        values:
+            layout: recipe
+    -
+        scope:
             path: DimSum
         values:
             layout: recipe
