@@ -18,7 +18,7 @@
 <script>
 function PortionScaleUpdate() {
 	$("section#content span.scale").html(function(){
-		return ($(this).attr("num") / {{ page.basePortions }} * $("#PortionSpinner").spinner("value"));
+		return (Math.round($(this).attr("num") / {{ page.basePortions }} * $("#PortionSpinner").spinner("value") * 100) / 100);
 	});
 }
 
