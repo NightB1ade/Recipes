@@ -1,9 +1,9 @@
 ---
 ---
 
-# Desserts
+# Baking
 
-[Toffee Cupcakes](Desserts/ToffeeCupcakes.html)  
+[Toffee Cupcakes](Baking/ToffeeCupcakes.html)  
 
 # Dim Sum
 

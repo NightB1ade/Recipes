@@ -4,7 +4,7 @@ titles_from_headings:
 defaults:
     -
         scope:
-            path: Desserts
+            path: Baking
         values:
             layout: recipe
     -
