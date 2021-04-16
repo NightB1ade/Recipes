@@ -13,6 +13,7 @@
 # Mains
 
 [Coconut Chicken Noodle Soup](Mains/CoconutChickenNoodleSoup.html)  
+[Oyakodon](Mains/Oyakodon.html)  
 
 # Utility
 
