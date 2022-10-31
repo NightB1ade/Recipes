@@ -8,6 +8,9 @@
 
 # Bread Maker
 
+## Basic – White
+
+[Basic White Loaf](BreadMaker/BasicWhiteLoaf.html)  
 [Rapid White Loaf](BreadMaker/RapidWhiteLoaf.html)  
 
 # Dim Sum
