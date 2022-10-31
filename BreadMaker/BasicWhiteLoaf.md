@@ -9,5 +9,5 @@ title: Basic White Loaf
 | Sugar              | 1½ tbsp        | 1 tbsp         | 1 tbsp      |
 | Butter             | 25g (1oz)      | 25g (1oz)      | 15g (½oz)   |
 | Milk powder        | 2 tbsp         | 1½ tbsp        | 1 tbsp      |
-| Salt               | 1½ tsp         | 1½ tsp         | 1 tsp       |
+| Salt               | ¾ tsp          | ¾ tsp          | ½ tsp       |
 | Water              | 400ml          | 350ml          | 280ml       |
