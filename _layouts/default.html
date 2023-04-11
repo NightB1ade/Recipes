@@ -4,14 +4,23 @@
 {% include header.html %}
 
 <body
-{%- if page.onLoad != null %} onLoad="{{ page.onLoad }}"{%- endif -%}
+{%- if page.onLoad != null %} onLoad="{{ page.onLoad }}"
+{%- elsif page.basePortions != null %} onLoad="PortionScaleUpdate()"
+{%- endif -%}
 >
 
 {% include page_title.html %}
 <section id="content">
+{%- if page.basePortions != null %}
+{%- include portion_head.html %}
+{%- endif %}
 
 {{ content }}
 </section>
+
+{% if page.basePortions != null %}
+{%- include portion_js.html %}
+{% endif -%}
 
 </body>
 

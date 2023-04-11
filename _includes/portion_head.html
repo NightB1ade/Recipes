@@ -1,0 +1,25 @@
+
+
+<div class="container mt-3">
+	<h2>Portions</h2>
+	<div class="row align-items-center">
+		<div class="col col-3 col-sm-2 col-md-1">Serves</div>
+		<div class="col col-6 col-sm-4 col-md-3 col-lg-2">
+			<div class="input-group">
+				<button class="btn btn-outline-secondary"
+					type="button"
+					onclick="DecreasePortions()">–</button>
+				<input class="form-control text-center"
+					type="number"
+					id="NumPortions"
+					value="{{ page.basePortions }}" min="1"
+					base="{{ page.basePortions }}"
+					oninput="PortionScaleUpdate()"
+					required>
+				<button class="btn btn-outline-secondary"
+					type="button"
+					onclick="IncreasePortions()">+</button>
+			</div>
+		</div>
+	</div>
+</div>

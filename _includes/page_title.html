@@ -1,10 +1,32 @@
-<section
-	id="title">
-	<div class="container mt-2">
-		<h1 class="display-1 text-center">{{ page.title | default:site.title }}</h1>
-
-		{%- if page.title != null %}
-		<p>{{ site.title }}</p>
-		{%- endif %}
-	</div>
+<section id="title">
+<div class="container mt-2">
+	<h1 class="display-1 text-center">{{ page.title | default:site.title }}</h1>
+	<nav>
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">NightB1ade’s Sites</a></li>
+			{%- if page.title != null %}
+			<li class="breadcrumb-item"><a href="/Recipes/">Recipes</a></li>
+			{%- endif %}
+			{%- assign crumbs = page.url | remove: "/index.html" | split: "/" %}
+			{%- for crumb in crumbs offset: 1 %}
+				{%- if forloop.last == false %}
+					{%- case crumb %}
+						{%- when "Baking" %}
+			<li class="breadcrumb-item">Baking</li>
+						{%- when "BreadMaker" %}
+			<li class="breadcrumb-item">Bread Maker</li>
+			<li class="breadcrumb-item">Basic – White</li>
+						{%- when "DimSum" %}
+			<li class="breadcrumb-item">Dim Sum</li>
+						{%- when "Mains" %}
+			<li class="breadcrumb-item">Mains</li>
+						{%- when "Utility" %}
+			<li class="breadcrumb-item">Utility</li>
+					{%- endcase %}
+				{%- endif %}
+			{%- endfor %}
+			<li class="breadcrumb-item active">{{ page.title | default: "Recipes" }}</li>
+		</ol>
+	</nav>
+</div>
 </section>
