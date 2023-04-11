@@ -1,4 +1,5 @@
 ---
+layout: default_old
 ---
 
 # Baking
@@ -11,6 +12,7 @@
 ## Basic – White
 
 [Basic White Loaf](BreadMaker/BasicWhiteLoaf.html)  
+[Milk Loaf](BreadMaker/MilkLoaf.html)  
 [Rapid White Loaf](BreadMaker/RapidWhiteLoaf.html)  
 
 # Dim Sum

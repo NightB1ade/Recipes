@@ -1,12 +1,15 @@
-<!doctype html>
-<html lang="{{ site.lang | default: "en-GB" }}">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}" data-bs-theme="dark">
 
 {% include header.html %}
 
-<body>
-{% include page_title.html %}
+<body
+{%- if page.onLoad != null %} onLoad="{{ page.onLoad }}"{%- endif -%}
+>
 
+{% include page_title.html %}
 <section id="content">
+
 {{ content }}
 </section>
 

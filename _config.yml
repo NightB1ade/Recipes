@@ -6,19 +6,24 @@ defaults:
         scope:
             path: Baking
         values:
-            layout: recipe
+            layout: recipe_old
+    -
+        scope:
+            path: BreadMaker
+        values:
+            layout: recipe_old
     -
         scope:
             path: DimSum
         values:
-            layout: recipe
+            layout: recipe_old
     -
         scope:
             path: Mains
         values:
-            layout: recipe
+            layout: recipe_old
     -
         scope:
             path: Utility
         values:
-            layout: recipe
+            layout: recipe_old
