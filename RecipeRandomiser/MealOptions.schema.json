@@ -1,0 +1,19 @@
+{
+	"type": "array"
+	, "title": "Meal Options"
+	, "format": "table"
+	, "uniqueItems": true
+	, "items": {
+		"type": "object"
+		, "title": "Meal Option"
+		, "required": [
+			"name"
+		]
+		, "properties": {
+			"name": {
+				"type": "string"
+				, "title": "Name"
+			}
+		}
+	}
+}

@@ -1,8 +1,48 @@
 ---
 title: Recipe Randomiser
+onLoad: OnDocumentLoad()
 ---
 
 <div class="container mt-3">
-	<h1>Lorem Ipsum</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h2>Options</h2>
+	<div class="row align-items-center">
+		<div class="col col-3 col-sm-2 col-md-1">Rows</div>
+		<div class="col col-6 col-sm-4 col-md-3 col-lg-2">
+			<div class="input-group">
+				<button class="btn btn-outline-secondary"
+					type="button"
+					onclick="DecreaseRows()">–</button>
+				<input class="form-control text-center"
+					type="number"
+					id="NumRows"
+					value="7" min="1"
+					oninput="RowsUpdate()"
+					required>
+				<button class="btn btn-outline-secondary"
+					type="button"
+					onclick="IncreaseRows()">+</button>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-2">
+		<div class="col col-12">
+			<button class="btn btn-primary"
+				type="button"
+				id="RandomiseButton"
+				onclick="RandomiseRecipes()"
+				>Randomise</button>
+		</div>
+	</div>
 </div>
+
+
+<div class="container mt-3">
+	<h2>Results</h2>
+	<div class="row"
+		id="ResultsOutput"></div>
+</div>
+
+
+
+
+<script src="{{ 'index.js?v=' | append: site.github.build_revision }}"></script>
