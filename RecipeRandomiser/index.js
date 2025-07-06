@@ -84,7 +84,7 @@ function WriteResults() {
 					+ '<div class="card-body">'
 						+ '<button class="btn btn-outline-secondary"'
 							+ ' onclick="RowRerandomise(' + i + ')"'
-							+ '>🗘</button>'
+							+ '><i class="bi bi-shuffle"></i></button>'
 						+ " " + result.name
 					+ "</div>"
 				+ "</div>"
