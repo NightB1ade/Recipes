@@ -7,17 +7,28 @@ function WriteList() {
 	var fullListOutput = document.getElementById("FullListOutput");
 	var fullListHTML = "";
 
-	for (let i = 0; i < mealOptionsJSON.length; i++) {
-		var listItem = mealOptionsJSON[i];
-
-		fullListHTML += '<div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mt-3">'
+	mealOptionsJSON.forEach((item,i) => {
+		fullListHTML
+			+= '<div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mt-3">'
 				+ '<div class="card">'
 					+ '<div class="card-body">'
-						+ listItem.name
-					+ "</div>"
-				+ "</div>"
-			+ "</div>";
-	}
+						+ '<h5 class="card-title">' + item.name + '</h5>';
+
+		if (item.variants.length >= 1) {
+			fullListHTML += '<ul>';
+
+			item.variants.forEach((item) => {
+				fullListHTML += '<li>' + item + '</li>'
+			});
+
+			fullListHTML += '</ul>';
+		}
+
+		fullListHTML
+					+= '</div>'
+				+ '</div>'
+			+ '</div>';
+	});
 
 	fullListOutput.innerHTML = fullListHTML;
 }

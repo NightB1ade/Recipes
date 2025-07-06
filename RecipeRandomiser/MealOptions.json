@@ -1,46 +1,60 @@
 [{
 		"name": "Boiled chicken"
+		, "variants": []
 	}
 	, {
 		"name": "Carbonara"
+		, "variants": [
+			"Normal"
+			, "Smoked salmon"
+		]
 	}
 	, {
 		"name": "Char siu (叉烧)"
+		, "variants": []
 	}
 	, {
 		"name": "Chicken coconut noodle soup"
+		, "variants": []
 	}
 	, {
 		"name": "Dim sum"
+		, "variants": []
 	}
 	, {
 		"name": "Filled pasta"
+		, "variants": []
 	}
 	, {
 		"name": "Fried rice"
+		, "variants": []
 	}
 	, {
 		"name": "Hoi sin chicken"
+		, "variants": []
 	}
 	, {
 		"name": "Lemon chicken"
+		, "variants": []
 	}
 	, {
 		"name": "Ngau lam (牛腩)"
+		, "variants": []
 	}
 	, {
 		"name": "Oyakodon"
+		, "variants": []
 	}
 	, {
 		"name": "Pastoeese"
+		, "variants": []
 	}
 	, {
 		"name": "Pizza"
-	}
-	, {
-		"name": "Smoked salmon carbonara"
+		, "variants": []
 	}
 	, {
 		"name": "Three bean chilli"
+		, "variants": []
 	}
 ]
