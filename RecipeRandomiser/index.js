@@ -132,7 +132,7 @@ function WriteResults() {
 
 
 function OnDocumentLoad() {
-	fetch("MealOptions.json")
+	fetch("{{ 'MealOptions.json?v=' | append: site.github.build_revision }}")
 		.then(x => x.text())
 		.then(y => mealOptionsJSON = JSON.parse(y));
 
