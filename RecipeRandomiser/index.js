@@ -1,5 +1,3 @@
----
----
 var mealOptionsJSON;
 var randomiseButton;
 var unchosenOptionsJSON;

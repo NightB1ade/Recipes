@@ -1,10 +1,3 @@
----
----
-var mealOptionsJSON;
-
-
-
-
 function WriteList() {
 	var fullListOutput = document.getElementById("FullListOutput");
 	var fullListHTML = "";
@@ -33,14 +26,4 @@ function WriteList() {
 	});
 
 	fullListOutput.innerHTML = fullListHTML;
-}
-
-
-
-
-function OnDocumentLoad() {
-	fetch("{{ 'MealOptions.json?v=' | append: site.github.build_revision }}")
-		.then(x => x.text())
-		.then(y => mealOptionsJSON = JSON.parse(y))
-		.then(z => WriteList());
 }

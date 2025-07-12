@@ -13,3 +13,17 @@ onLoad: OnDocumentLoad()
 
 
 <script src="{{ 'FullList.js?v=' | append: site.github.build_revision }}"></script>
+<script>
+	var mealOptionsJSON;
+
+
+
+
+	function OnDocumentLoad() {
+		fetch("{{ 'MealOptions.json?v=' | append: site.github.build_revision }}")
+			.then(x => x.text())
+			.then(y => mealOptionsJSON = JSON.parse(y))
+			.then(z => WriteList());
+	}
+
+</script>
