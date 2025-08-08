@@ -27,7 +27,7 @@ function IncreaseRows() {
 function RandomiseRecipes() {
 	var numRows = parseInt(document.getElementById("NumRows").value);
 
-	unchosenOptionsJSON = [...mealOptionsJSON];
+	unchosenOptionsJSON = JSON.parse(JSON.stringify(mealOptionsJSON));
 	resultOptionsJSON = [];
 
 	randomiseButton.classList.remove("btn-primary");
@@ -49,6 +49,7 @@ function RandomiseRecipes() {
 
 function RowRerandomise(RowNumber) {
 	var randomArrayNumber = Math.floor(Math.random() * unchosenOptionsJSON.length);
+	delete resultOptionsJSON[RowNumber].variantChosen;
 
 	unchosenOptionsJSON.push(
 		resultOptionsJSON.splice(RowNumber,1
@@ -74,6 +75,7 @@ function VariantRerandomise(item,variant) {
 	var result = resultOptionsJSON[item];
 	var randomVariant = Math.floor(Math.random() * (result.variants.length - 1));
 	var newVariant = (randomVariant == variant ? result.variants.length - 1 : randomVariant);
+	resultOptionsJSON[item].variantChosen = newVariant;
 
 	var variantHTML = '<td><button class="btn btn-outline-secondary"'
 			+ ' onclick="VariantRerandomise(' + item + ',' + newVariant + ')">'
@@ -106,14 +108,18 @@ function WriteResults() {
 								+ '</tr>';
 
 			if (item.variants.length >= 1) {
-				var randomVariant = Math.floor(Math.random() * item.variants.length);
+				if (
+					item.variantChosen == undefined
+				) {
+					item.variantChosen = Math.floor(Math.random() * item.variants.length);
+				}
 
 				resultsHTML += '<tr id="ResultsOutput_' + i + '_Variant">'
 						+ '<td><button class="btn btn-outline-secondary"'
-							+ ' onclick="VariantRerandomise(' + i + ',' + randomVariant + ')">'
+							+ ' onclick="VariantRerandomise(' + i + ',' + item.variantChosen + ')">'
 							+ '<i class="bi bi-shuffle"></i></button>'
 						+ '</td>'
-						+ '<td>' + item.variants[randomVariant] + '</td>'
+						+ '<td>' + item.variants[item.variantChosen] + '</td>'
 					+ '</tr>';
 			}
 
