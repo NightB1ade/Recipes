@@ -1,5 +1,5 @@
 [{
-		"name": "Aromatic Duck"
+		"name": "Aromatic duck"
 		, "variants": []
 	}
 	, {
@@ -54,7 +54,7 @@
 		, "variants": []
 	}
 	, {
-		"name": "Pasta Bake"
+		"name": "Pasta bake"
 		, "variants": [
 			"Normal"
 			, "Grandma’s"
