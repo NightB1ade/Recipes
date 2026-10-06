@@ -85,6 +85,13 @@
 		, "variants": []
 	}
 	, {
+		"name": "Stroganoff"
+		, "variants": [
+			"Beef"
+			, "Mushroom"
+		]
+	}
+	, {
 		"name": "Sushi"
 		, "variants": []
 	}
