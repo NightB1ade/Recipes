@@ -104,7 +104,15 @@
 		, "variants": []
 	}
 	, {
+		"name": "Teriyaki Chicken"
+		, "variants": []
+	}
+	, {
 		"name": "Three bean chilli"
+		, "variants": []
+	}
+	, {
+		"name": "Toad in the Hole"
 		, "variants": []
 	}
 ]
