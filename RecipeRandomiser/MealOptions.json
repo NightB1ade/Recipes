@@ -81,6 +81,12 @@
 		, "variants": []
 	}
 	, {
+		"name": "Salmon"
+		, "variants": [
+			"Chilli Ginger Sauce"
+		]
+	}
+	, {
 		"name": "Spaghetti bolognese"
 		, "variants": []
 	}
